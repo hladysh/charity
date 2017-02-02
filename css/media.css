@@ -1,0 +1,84 @@
+
+@media (max-width: 1170px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.contant_padding {
+		padding: 0;
+	}
+}
+@media (max-width: 991px) {
+	.header_articles .col-md-3 {
+		margin-right: 0;
+	}
+	.contant_padding {
+		padding: 0;
+	}
+	#story {
+		background-position: 0px 0px;
+	}
+
+}
+
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	.container,
+	.row {
+
+		margin: 0;
+	}
+	header {
+		background-size: cover;
+		background-position: 0;
+	}
+	.header_content h1{
+		margin-top: 60px;
+		font-size: 45px;
+	}
+	.header_content p {
+		width: 90%;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.btn_menu_wrap {
+		position: relative;
+	}
+	#nav-toggle {
+		display: block;
+	}
+	header nav {
+		display: none;
+		margin-top: 40px;
+	}
+	nav ul {
+		text-align: center;
+		background: rgba(0, 0, 0, 0.6);
+	}
+	nav ul li{
+		padding-top: 10px;
+	}
+	nav ul li:hover {
+		  border-top: 3px solid transparent;
+	}
+	nav ul li a:hover,
+	nav ul li:active a {
+		color: #32be60;
+	}
+	nav ul li,
+	nav ul li:last-child a{
+		display: block;
+		margin-right: 0;
+	}
+
+}
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+	.campaign_content {
+		padding: 0 25px;
+	}
+
+}
+

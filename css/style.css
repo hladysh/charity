@@ -33,6 +33,25 @@
   font-weight: bold;
   font-style: normal;
 }
+p{
+  font-family: 'montserrat-light';
+    font-size: 14px;
+    line-height: 24px;
+    color: #999;
+}
+
+
+
+.btn {
+    padding: 18px 55px;
+    margin: 55px 0;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 18px;
+      font-family: 'montserrat-semibold';
+}
 /* ==========================================================================
 Header
 ========================================================================== */
@@ -42,11 +61,13 @@ header {
       color: #dedede;
       position: relative;
       padding-bottom: 50px;
-    background: #000 url(../img/bg_header_min.jpg)  left -160px bottom  no-repeat;
-     background-size: 160%;
+    background: #000 url(../img/bg_header_min.jpg)  no-repeat;
+    background-position: 0px -150px;
+     
 }
 
-header .overlay {
+header .overlay ,
+#story .overlay{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -57,6 +78,7 @@ header .overlay {
 }
 .logo {
   margin-top: 40px;
+  margin-left: 10%;
 }
 .logo a {
   color: #fff;
@@ -67,6 +89,7 @@ header .overlay {
 }
 nav ul {
   margin: 0;
+  padding: 0;
   text-align: right;
 }
 nav ul li {
@@ -110,14 +133,7 @@ nav ul li a {
 }    
 .header_content button {
     color: #fff;
-    padding: 18px 55px;
-    margin: 55px 0;
     background-color: #32be60;
-    border: none;
-    border-radius: 30px;
-    outline: none;
-    text-transform: uppercase;
-    font-size: 18px;
 }
 .header_content button:hover {
   background: #176330;
@@ -141,4 +157,218 @@ nav ul li a {
   color: #ccc;
   font-size: 14px;
   text-transform: uppercase;
+}
+
+/*mobile-nav*/
+
+
+#nav-toggle {
+  display: none;
+}
+#nav-toggle.active span {
+    background-color: transparent;
+}
+
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+    top: 0;
+}
+
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+    transform: translateY(-10px) rotate(-45deg);
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    -ms-transform: translateY(-10px) rotate(-45deg);
+    top: 10px;
+}
+
+
+
+#nav-toggle {
+    position: absolute;
+    right: 15px;
+    top: 37px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -o-border-radius: 1px;
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    position: absolute;
+    display: block;
+    content: '';
+}
+
+#nav-toggle span:before {
+    top: -8px;
+}
+
+#nav-toggle span:after {
+    bottom: -8px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+}
+
+/* ==========================================================================
+Section live campaigns
+========================================================================== */
+.live_campaigns {
+  text-align: center;
+}
+.section_pading {
+  padding: 100px 0;
+}
+/*.live_campaigns_slider {
+  width: 80%;
+  margin: 0 auto;
+}*/
+#campaigns_text {
+  color: #8a849e;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  font-size: 14px ;
+
+}
+.live_campaigns_slider .slick-dots {
+  top: -25px;
+  bottom: 1000px;
+}
+.slick-dots li {
+  margin: 0;
+}
+.slick-track {
+  margin: 50px 0;
+}
+.campaign_item {
+    /*margin-right: 20px;*/
+}
+/*.slick-slide*/
+ .slick-active {
+  /*margin-right: 20px;*/
+}
+ .slick-active:nth-child(4n + 4) {
+  margin-right: 0;
+ }
+.campaign_content {
+
+  padding: 0 10px;
+  text-align: left;
+}
+
+.campaign_content img {
+  width: 100%;
+  height: 200px;
+}
+.contant_padding {
+  padding: 0 8px;
+}
+.campaign_content h4 {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: 'montserrat-regular';
+}
+.campaign_content .desc{
+  color: #999;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: 'montserrat-light';
+}
+.campaign_content .icon_map {
+  display: inline-block;
+  width: 14px;
+  height: 16px;
+  margin-right: 8px;
+  background: url(../img/sprits.png) no-repeat center center;
+  background-position: 1px -2px;
+}
+.campaign_content span{
+  color: #150c31;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: 'montserrat-regular';
+}
+.progres_bar_item {
+  display: inline-block;
+    width: 100%;
+    height: 5px;
+    background: #ccc;
+    margin: 20px 0;
+}
+#progres_bar_india,
+#progres_bar_sierra,
+#progres_bar_guatemala,
+#progres_bar_mali {
+  height: 5px;
+  background: #32be60;
+}
+.achievements p{
+  color: #807996;
+  display: inline-block;
+    margin-right: 10px;
+  line-height: 18px;
+  font-family: 'montserrat-regular';
+}
+.achievements  p .counts {
+  color: #000;
+  font-family: 'montserrat-semibold';
+}
+
+.all_campaigns {
+  display: block;
+  margin: 0 auto;
+  background: transparent;
+  border: 2px solid #000;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.all_campaigns:hover {
+  background: #32be60;
+  border: 2px solid #32be60;
+  color: #fff;
+}
+
+/* ==========================================================================
+  story
+========================================================================== */
+
+#story {
+  color: #fff;
+  position: relative;
+  min-height: 480px;
+  background: #000 url(../img/bg_story.jpg) no-repeat top -100px center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+#story h3 {
+  margin-top: 150px;
+  font-size: 28px;
+  font-family: 'montserrat-regular';
+}
+#story p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
 }
