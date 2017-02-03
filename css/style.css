@@ -233,25 +233,29 @@ nav ul li a {
 /* ==========================================================================
 Section live campaigns
 ========================================================================== */
-.live_campaigns {
+.live_campaigns,
+.help {
   text-align: center;
+}
+.live_campaigns h2,
+.help h2 {
+  font-size: 28px;
+  font-family: 'montserrat-regular';
+
 }
 .section_pading {
   padding: 100px 0;
 }
-/*.live_campaigns_slider {
-  width: 80%;
-  margin: 0 auto;
-}*/
-#campaigns_text {
+
+.text_after_hed {
   color: #8a849e;
   width: 80%;
   margin: 0 auto;
   margin-bottom: 35px;
   font-size: 14px ;
-
 }
-.live_campaigns_slider .slick-dots {
+.live_campaigns_slider .slick-dots,
+.help_slider .slick-dots {
   top: -25px;
   bottom: 1000px;
 }
@@ -261,16 +265,7 @@ Section live campaigns
 .slick-track {
   margin: 50px 0;
 }
-.campaign_item {
-    /*margin-right: 20px;*/
-}
-/*.slick-slide*/
- .slick-active {
-  /*margin-right: 20px;*/
-}
- .slick-active:nth-child(4n + 4) {
-  margin-right: 0;
- }
+
 .campaign_content {
 
   padding: 0 10px;
@@ -319,6 +314,8 @@ Section live campaigns
 #progres_bar_india,
 #progres_bar_sierra,
 #progres_bar_guatemala,
+.progres_bar_india,
+.progres_bar_guatemala,
 #progres_bar_mali {
   height: 5px;
   background: #32be60;
@@ -351,7 +348,7 @@ Section live campaigns
 }
 
 /* ==========================================================================
-  story
+ Section story
 ========================================================================== */
 
 #story {
@@ -371,4 +368,76 @@ Section live campaigns
   color: #fff;
   font-size: 14px;
   line-height: 18px;
+}
+
+
+/* ==========================================================================
+section help
+========================================================================== */
+.help {
+  padding-bottom: 30px;
+}
+.help_item {
+  text-align: left;
+  min-height: 150px;
+}
+.help_icon {
+    height: 82px;
+    width: 86px;
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    background: url(../img/sprits.png) no-repeat;
+    background-position: -3px -26px;
+}
+.help_item .blood {
+  background-position: -3px -109px;
+}
+.help_item .goods {
+    background-position:-3px -193px;
+}
+.help_item .volunteer {
+      background-position: -3px -276px;
+}
+.help_item h5 {
+    margin: 0px;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: 'montserrat-regular';
+
+}
+.help_item p {
+  color: #807996;
+  font-size: 14px;
+  margin-left: 106px;
+  margin-right: 70px;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+.help .slick-track {
+  margin-bottom: 0;
+}
+/* ==========================================================================
+  compaigns
+========================================================================== */
+#goods {
+  min-height: 470px;
+  padding: 60px 0;
+  background: #f3f3f3 url(../img/bg_goods.png) no-repeat;
+  background-position: 25% 0px;
+}
+#goods p {
+  color: #807996;
+}
+
+#goods button {
+  background-color: #150c31;
+  color: #fff;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+#goods button:hover {
+  background-color: #32be60;
 }

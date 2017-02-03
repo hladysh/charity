@@ -19,12 +19,18 @@
 	#story {
 		background-position: 0px 0px;
 	}
+	.help_item p {
+		margin-right: 10px;
+	}
 
 }
 
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+	.btn {
+		outline: none;
+	}
 	.container,
 	.row {
 
