@@ -1,11 +1,3 @@
-/*[class*='col-'],
-.container{
-    border: 1px solid red;
-} 
-.row {
-  border: 2px solid green;
-}*/
-
 @font-face {
   font-family: 'montserrat-light';
   src: url('../fonts/montserrat-light-webfont.woff2') format('woff2'), url('../fonts/montserrat-light-webfont.woff') format('woff'), url('../fonts/montserrat-light-webfont.svg#montserratlight') format('svg');
@@ -33,41 +25,41 @@
   font-weight: bold;
   font-style: normal;
 }
-p{
+
+p {
   font-family: 'montserrat-light';
-    font-size: 14px;
-    line-height: 24px;
-    color: #999;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999;
 }
-
-
 
 .btn {
-    padding: 18px 55px;
-    margin: 55px 0;
-    border: none;
-    border-radius: 30px;
-    outline: none;
-    text-transform: uppercase;
-    font-size: 18px;
-      font-family: 'montserrat-semibold';
+  padding: 18px 55px;
+  margin: 55px 0;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: 'montserrat-semibold';
 }
+
+
 /* ==========================================================================
 Header
 ========================================================================== */
 
 header {
-    min-height: 760px;
-      color: #dedede;
-      position: relative;
-      padding-bottom: 50px;
-    background: #000 url(../img/bg_header_min.jpg)  no-repeat;
-    background-position: 0px -150px;
-     
+  min-height: 760px;
+  color: #dedede;
+  position: relative;
+  padding-bottom: 50px;
+  background: #000 url(../img/bg_header_min.jpg) no-repeat;
+  background-position: 0px -150px;
 }
 
-header .overlay ,
-#story .overlay{
+header .overlay,
+#story .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -76,10 +68,12 @@ header .overlay ,
   background: rgba(0, 0, 0, 0.6);
   z-index: 0;
 }
+
 .logo {
   margin-top: 40px;
   margin-left: 10%;
 }
+
 .logo a {
   color: #fff;
   font-size: 14px;
@@ -87,26 +81,37 @@ header .overlay ,
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.logo a:hover {
+  color: #32be60;
+  transition: all 0.8s;
+}
+
 nav ul {
   margin: 0;
   padding: 0;
   text-align: right;
 }
+
 nav ul li {
   display: inline-block;
   margin-right: 25px;
   padding-top: 40px;
   border-top: 3px solid transparent;
 }
+
 nav ul li:last-child {
   margin-right: 0;
 }
-nav ul li:last-child a{
+
+nav ul li:last-child a {
   display: table;
 }
+
 nav ul li:hover {
- border-top: 2px solid #fff;
+  border-top: 2px solid #fff;
 }
+
 nav ul li a {
   color: #fff;
   font-size: 11px;
@@ -114,137 +119,145 @@ nav ul li a {
   font-family: 'montserrat-semibold';
   text-transform: uppercase;
 }
+
 .header_content {
   position: relative;
   text-align: center;
 }
+
 .header_content h1 {
   color: #fff;
   margin-top: 160px;
   font-size: 60px;
-   font-family: 'montserrat-light';
+  font-family: 'montserrat-light';
 }
+
 .header_content p {
   color: #a59f99;
   width: 68%;
   margin: 0 auto;
   font-size: 18px;
   line-height: 30px;
-}    
-.header_content button {
-    color: #fff;
-    background-color: #32be60;
 }
+
+.header_content button {
+  color: #fff;
+  background-color: #32be60;
+}
+
 .header_content button:hover {
   background: #176330;
   -webkit-transition: .4s ease;
   transition: .4s ease;
 }
+
 .header_articles {
-    color: #bbbab9;
-    margin-top: 50px;
-    padding: 0 20px;
+  color: #bbbab9;
+  margin-top: 50px;
+  padding: 0 20px;
   font-size: 12px;
   line-height: 22px;
 }
+
 .header_articles .col-md-3 {
   margin-right: 12.5%;
 }
-.header_articles .col-md-3:last-child{
+
+.header_articles .col-md-3:last-child {
   margin-right: 0;
 }
+
 .header_articles h5 {
   color: #ccc;
   font-size: 14px;
   text-transform: uppercase;
 }
 
-/*mobile-nav*/
 
+/*mobile-nav*/
 
 #nav-toggle {
   display: none;
 }
+
 #nav-toggle.active span {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 #nav-toggle.active span:before,
 #nav-toggle.active span:after {
-    top: 0;
+  top: 0;
 }
 
 #nav-toggle.active span:before {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
 }
 
 #nav-toggle.active span:after {
-    transform: translateY(-10px) rotate(-45deg);
-    -webkit-transform: translateY(-10px) rotate(-45deg);
-    -ms-transform: translateY(-10px) rotate(-45deg);
-    top: 10px;
+  transform: translateY(-10px) rotate(-45deg);
+  -webkit-transform: translateY(-10px) rotate(-45deg);
+  -ms-transform: translateY(-10px) rotate(-45deg);
+  top: 10px;
 }
 
-
-
 #nav-toggle {
-    position: absolute;
-    right: 15px;
-    top: 37px;
-    cursor: pointer;
-    padding: 10px 35px 16px 0px;
+  position: absolute;
+  right: 15px;
+  top: 37px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
 }
 
 #nav-toggle span,
 #nav-toggle span:before,
 #nav-toggle span:after {
-    cursor: pointer;
-    border-radius: 1px;
-    -moz-border-radius: 1px;
-    -webkit-border-radius: 1px;
-    -o-border-radius: 1px;
-    height: 3px;
-    width: 25px;
-    background: #fff;
-    position: absolute;
-    display: block;
-    content: '';
+  cursor: pointer;
+  border-radius: 1px;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -o-border-radius: 1px;
+  height: 3px;
+  width: 25px;
+  background: #fff;
+  position: absolute;
+  display: block;
+  content: '';
 }
 
 #nav-toggle span:before {
-    top: -8px;
+  top: -8px;
 }
 
 #nav-toggle span:after {
-    bottom: -8px;
+  bottom: -8px;
 }
 
 #nav-toggle span,
 #nav-toggle span:before,
 #nav-toggle span:after {
-    transition: all 500ms ease-in-out;
-    -webkit-transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
 }
+
 
 /* ==========================================================================
 Section live campaigns
 ========================================================================== */
-.live_campaigns,
-.help {
-  text-align: center;
-}
+
 .live_campaigns h2,
 .help h2 {
   font-size: 28px;
   font-family: 'montserrat-regular';
-
 }
+
 .section_pading {
-  padding: 100px 0;
+  padding-top: 90px;
+  padding-bottom: 50px;
+  text-align: center;
 }
 
 .text_after_hed {
@@ -252,22 +265,25 @@ Section live campaigns
   width: 80%;
   margin: 0 auto;
   margin-bottom: 35px;
-  font-size: 14px ;
+  font-size: 14px;
 }
+
 .live_campaigns_slider .slick-dots,
+.donors_slider .slick-dots,
 .help_slider .slick-dots {
   top: -25px;
   bottom: 1000px;
 }
+
 .slick-dots li {
   margin: 0;
 }
+
 .slick-track {
   margin: 50px 0;
 }
 
 .campaign_content {
-
   padding: 0 10px;
   text-align: left;
 }
@@ -276,20 +292,24 @@ Section live campaigns
   width: 100%;
   height: 200px;
 }
+
 .contant_padding {
   padding: 0 8px;
 }
+
 .campaign_content h4 {
   font-size: 16px;
   line-height: 22px;
   font-family: 'montserrat-regular';
 }
-.campaign_content .desc{
+
+.campaign_content .desc {
   color: #999;
   font-size: 12px;
   line-height: 20px;
   font-family: 'montserrat-light';
 }
+
 .campaign_content .icon_map {
   display: inline-block;
   width: 14px;
@@ -298,19 +318,22 @@ Section live campaigns
   background: url(../img/sprits.png) no-repeat center center;
   background-position: 1px -2px;
 }
-.campaign_content span{
+
+.campaign_content span {
   color: #150c31;
   font-size: 12px;
   line-height: 16px;
   font-family: 'montserrat-regular';
 }
+
 .progres_bar_item {
   display: inline-block;
-    width: 100%;
-    height: 5px;
-    background: #ccc;
-    margin: 20px 0;
+  width: 100%;
+  height: 5px;
+  background: #ccc;
+  margin: 20px 0;
 }
+
 #progres_bar_india,
 #progres_bar_sierra,
 #progres_bar_guatemala,
@@ -320,14 +343,16 @@ Section live campaigns
   height: 5px;
   background: #32be60;
 }
-.achievements p{
+
+.achievements p {
   color: #807996;
   display: inline-block;
-    margin-right: 10px;
+  margin-right: 10px;
   line-height: 18px;
   font-family: 'montserrat-regular';
 }
-.achievements  p .counts {
+
+.achievements p .counts {
   color: #000;
   font-family: 'montserrat-semibold';
 }
@@ -347,6 +372,7 @@ Section live campaigns
   color: #fff;
 }
 
+
 /* ==========================================================================
  Section story
 ========================================================================== */
@@ -359,11 +385,13 @@ Section live campaigns
   -webkit-background-size: cover;
   background-size: cover;
 }
+
 #story h3 {
   margin-top: 150px;
   font-size: 28px;
   font-family: 'montserrat-regular';
 }
+
 #story p {
   color: #fff;
   font-size: 14px;
@@ -374,59 +402,76 @@ Section live campaigns
 /* ==========================================================================
 section help
 ========================================================================== */
+
 .help {
   padding-bottom: 30px;
 }
+
 .help_item {
   text-align: left;
   min-height: 150px;
 }
+
 .help_icon {
-    height: 82px;
-    width: 86px;
-    display: inline-block;
-    float: left;
-    margin-right: 20px;
-    background: url(../img/sprits.png) no-repeat;
-    background-position: -3px -26px;
+  height: 82px;
+  width: 86px;
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+  background: url(../img/sprits.png) no-repeat;
+  background-position: -3px -26px;
 }
+
 .help_item .blood {
   background-position: -3px -109px;
 }
-.help_item .goods {
-    background-position:-3px -193px;
-}
-.help_item .volunteer {
-      background-position: -3px -276px;
-}
-.help_item h5 {
-    margin: 0px;
-    font-size: 18px;
-    line-height: 20px;
-    font-family: 'montserrat-regular';
 
+.help_item .goods {
+  background-position: -3px -193px;
 }
+
+.help_item .volunteer {
+  background-position: -3px -276px;
+}
+
+.help_item h5 {
+  margin: 0px;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: 'montserrat-regular';
+}
+
 .help_item p {
   color: #807996;
   font-size: 14px;
   margin-left: 106px;
   margin-right: 70px;
 }
+
 .slick-dotted.slick-slider {
   margin-bottom: 0;
 }
+
+.slick-slide {
+  outline: none;
+}
+
 .help .slick-track {
   margin-bottom: 0;
 }
+
+
 /* ==========================================================================
-  compaigns
+ article goods
 ========================================================================== */
+
 #goods {
   min-height: 470px;
   padding: 60px 0;
   background: #f3f3f3 url(../img/bg_goods.png) no-repeat;
   background-position: 25% 0px;
 }
+
 #goods p {
   color: #807996;
 }
@@ -440,4 +485,64 @@ section help
 
 #goods button:hover {
   background-color: #32be60;
+}
+
+
+/* ==========================================================================
+ section donors
+========================================================================== */
+
+.donors {
+  padding-bottom: 30px;
+}
+
+.donors_slider img {
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.donors_slider p {
+  line-height: 14px;
+}
+
+.donors_slider .money {
+  color: #000;
+  font-size: 18px;
+  font-family: 'montserrat-regular';
+}
+
+
+/* ==========================================================================
+ footer 
+========================================================================== */
+
+#footer {
+  background-color: #202020;
+}
+
+#footer p {
+  float: left;
+  display: inline-block;
+  font-size: 12px;
+}
+
+#footer ul {
+  float: right;
+  display: inline-block;
+}
+
+#footer ul li {
+  float: left;
+  margin-left: 10px;
+  list-style-type: none;
+}
+
+#footer ul li a {
+  color: #fff;
+  font-size: 12px;
+}
+
+#footer ul li a:hover {
+  color: #807996;
 }
